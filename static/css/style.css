@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+    background-color: #5c5b5b;
+    text-align: center;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('ferrari.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height:100vh;
+}
+#research {
+    font-size: 18px;
+    width: 100px;
+    height: 23px;
+    top: 23px;
+}
+
+#box {
+    border-style: solid;
+    font-family: cursive;
+    text-align: center;
+   font-size: medium;
+    position: absolute;
+    width: 700px;
+    bottom: 9%;
+    height: 850px;
+    right: 30%;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+#fuel {
+    width: 90px;
+    height: 43px;
+    text-align: center;
+    border-radius: 14px;
+    font-size: 20px;
+}
+
+#fuel:hover {
+    background-color: rgb(10, 203, 55);
+}
+
+#research {
+    width: 99px;
+    height: 43px;
+    text-align: center;
+    border-radius: 14px;
+    font-size: 18px;
+}
+
+#research:hover {
+    background-color: rgb(42, 244, 24);
+}
+
+#resea {
+    width: 99px;
+    height: 43px;
+    text-align: center;
+    border-radius: 14px;
+    font-size: 18px;
+}
+
+#resea:hover {
+    background-color: rgb(35, 219, 47);
+}
+
+#sub {
+    width: 120px;
+    height: 43px;
+    text-align: center;
+    border-radius: 14px;
+    font-size: 18px;
+}
+
+#sub:hover {
+    background-color: rgb(186, 78, 78);
+}
+
+#first {
+    border-radius: 14px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#second {
+    border-radius: 14px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#third {
+    border-radius: 14px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#fourth {
+    border-radius: 14px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+}

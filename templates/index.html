@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div style="color:rgb(163, 163, 169)">
+        <div class="hero-image"> 
+            <h1 style="font-size:50px">Predictive Analysis</h1>
+        <form action="{{ url_for('predict')}}" method="post">
+            <input id="first" name="Year" type="number " placeholder="Year">
+          
+            <input id="second" name="Present_Price" required="required" placeholder="Present_Price">
+            
+            <input id="third" name="Kms_Driven" required="required" placeholder="Kms_Driven">
+            
+            <input id="fourth" name="Owner" required="required" placeholder="Owner">
+            <h3>Fuel type</h3>
+            <select name="Fuel_Type_Petrol" id="fuel" required="required" >
+                <option value="Petrol">Petrol</option>
+                <option value="Diesel">Diesel</option>
+                <option value="Diesel">Hybrid</option>
+            </select>
+            <h3>Dealer or Private</h3><br><select name="Seller_Type_Individual" id="resea" required="required">
+                <option value="Dealer">Dealer</option>
+                <option value="Individual">Private</option>
+            </select>
+            <h3>Transmission type</h3><br><select name="Transmission_Mannual" id="research" required="required">
+                <option value="Mannual">Manual Car</option>
+                <option value="Automatic">Automatic Car</option>
+            </select>
+            <br><br><button id="sub" type="submit ">Predict Selling Price</button>
+            <br>
+       </form>
+           <br><br><h3>{{ prediction_text }}<h3>
+    </div>
+</body>
+
+</html>
